@@ -1,7 +1,3 @@
---SELECT location, date, total_cases, new_cases, total_deaths, population
---FROM COVIDProject..COVID_Deaths
---ORDER BY 1, 2;
-
 -- Likelihood of death upon COVID contraction
 -- Total Cases vs Total Deaths
 SELECT location, date, total_cases, total_deaths, (CONVERT(float, total_deaths)/CONVERT(float, total_cases))*100 AS DeathPercentage
